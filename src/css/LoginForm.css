@@ -1,0 +1,33 @@
+
+
+.container{
+    max-width : 1000px;
+    min-width : 300px;
+    margin : 0;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.login-form label {
+    margin: 10px 0;
+
+}
+
+.login-form button {
+    margin: 10px 0;
+    padding: 0;
+    background-color: aliceblue;
+    color: black;
+    width: 100px;
+    align-self: center;
+    height: 2rem
+
+
+}

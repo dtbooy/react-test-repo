@@ -1,14 +1,23 @@
+// Import React modules
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+// Import CSS
+import "./index.css";
+// Import Pages
 import App from "./routes/App.jsx";
 import ErrorPage from "./routes/ErrorPage.jsx";
-import "./index.css";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Fruit from "./routes/Fruit.jsx";
+import LoginForm from "./routes/LoginForm.jsx";
+import LiftingState from "./routes/lifting-state/LiftingState.jsx";
 
 
+// Create Router
 const router = createBrowserRouter([
   { path: "/", element: <App />, errorElement: <ErrorPage /> },
-
+  { path: "/fruit", element: <Fruit /> },
+  { path: "/login", element: <LoginForm /> },
+  { path: "/user/:userId", element: <LiftingState /> },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
